@@ -1,0 +1,92 @@
+<style>
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Default background color */
+    color: #000; /* Default text color */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Header background color */
+    color: #fff; /* Header text color */
+}
+
+header img {
+    max-width: 100px; /* Adjust size as needed */
+}
+
+header .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Main content styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    width: calc(20.33% - 20px); /* Adjust card width for different screen sizes */
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Card background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Card box shadow */
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/* Background animation */
+@keyframes animateBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 100%; }
+}
+
+body {
+    animation: animateBackground 20s linear infinite alternate;
+}
+p{
+    justify-content:first baseline;
+}
+ </style>
